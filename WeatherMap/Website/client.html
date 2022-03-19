@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather Map</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Content/stylesheet.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Content/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2" async></script>
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <div id="map"></div>
+    <div class="grow-parent" id="weather">
+      <hr id="first_line">
+      <input type="checkbox" id="btnControl1" onclick="backBlur(1)"/>
+      <label class="btn" for="btnControl1"><div class="grow" id="i1"></div></label>
+      <input type="checkbox" id="btnControl2" onclick="backBlur(2)"/>
+      <label class="btn" for="btnControl2"><div class="grow" id="i2"></div></label>
+      <input type="checkbox" id="btnControl3" onclick="backBlur(3)"/>
+      <label class="btn" for="btnControl3"><div class="grow" id="i3"></div></label>
+      <input type="checkbox" id="btnControl4" onclick="backBlur(4)"/>
+      <label class="btn" for="btnControl4"><div class="grow" id="i4"></div></label>
+      <input type="checkbox" id="btnControl5" onclick="backBlur(5)"/>
+      <label class="btn" for="btnControl5"><div class="grow" id="i5"></div></label>
+      <input type="checkbox" id="btnControl6" onclick="backBlur(6)"/>
+      <label class="btn" for="btnControl6"><div class="grow" id="i6"></div></label>
+      <hr id="second_line">
+      <input type="checkbox" id="btnControl7" onclick="backBlur(7)"/>
+      <label class="btn" for="btnControl7"><div class="grow" id="i7"></div></label>
+      <input type="checkbox" id="btnControl8" onclick="backBlur(8)"/>
+      <label class="btn" for="btnControl8"><div class="grow" id="i8"></div></label>
+      <input type="checkbox" id="btnControl9" onclick="backBlur(9)"/>
+      <label class="btn" for="btnControl9"><div class="grow" id="i9"></div></label>
+      <input type="checkbox" id="btnControl10" onclick="backBlur(10)"/>
+      <label class="btn" for="btnControl10"><div class="grow" id="i10"></div></label>
+      <input type="checkbox" id="btnControl11" onclick="backBlur(11)"/>
+      <label class="btn" for="btnControl11"><div class="grow" id="i11"></div></label>
+      <input type="checkbox" id="btnControl12" onclick="backBlur(12)"/>
+      <label class="btn" for="btnControl12"><div class="grow" id="i12"></div></label>
+      <hr id="third_line">
+    </div>
+  </body>
+</html>

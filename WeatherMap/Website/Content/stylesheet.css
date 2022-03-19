@@ -1,0 +1,217 @@
+html {
+  height: 100%;
+  
+}
+body {
+  min-height: 100%;
+  font-family: 'Miller Text Roman';
+  background-color: #007FFF;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #007FFF;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 1s infinite ease;
+  z-index: 9;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 1s infinite ease-in;
+  z-index: 10;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+#map {
+  height: 60%;
+  width: auto;
+  display: block;
+  border: 5px solid;
+  border-color: white;
+  padding: 18%;
+  margin: auto;
+  box-shadow: 0px 0px 10px black;
+}
+
+#weather {
+  opacity: 0;
+  margin-top: 20px;
+  position: relative;
+  height: 40%;
+  width: auto;
+  margin: auto;
+}
+
+#first_line, #second_line, #third_line {
+  border: 5px solid white;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 10px;
+}
+
+#btnControl1, #btnControl2, #btnControl3, #btnControl4, #btnControl5, #btnControl6, #btnControl7, #btnControl8, #btnControl9, #btnControl10, #btnControl11, #btnControl12 {
+  display: none;
+}
+
+#btnControl1:checked + label > div, #btnControl2:checked + label > div, #btnControl3:checked + label > div, #btnControl4:checked + label > div, #btnControl5:checked + label > div, #btnControl6:checked + label > div, #btnControl7:checked + label > div, #btnControl8:checked + label > div, #btnControl9:checked + label > div, #btnControl10:checked + label > div, #btnControl11:checked + label > div, #btnControl12:checked + label > div {
+  transform: scale(1.2);
+  z-index: 1;
+  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.grow { 
+  position: relative;
+  margin: 5px 5px 5px 5px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 10%;
+  font-size: 23px;
+  width:	15.45%;
+  height: auto;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  transition: box-shadow .3s;
+  box-shadow: 0px 0px 10px black;
+}
+
+@media screen and (max-device-width: 1400px) {
+  #map {
+    padding: 20%;
+  }
+  canvas {
+    height: 50px;
+    width: 50px;
+  }
+  img {
+    height: 50px;
+    width: 50px;
+  }
+  .grow {
+    width:	15%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-device-width: 1100px) {
+  #map {
+
+    padding: 30%;
+
+  }
+  canvas {
+
+    height: 50px;
+    width: 50px;
+
+  }
+
+  img {
+
+    height: 50px;
+    width: 50px;
+
+  }
+  .grow {
+
+    width:	14.5%;
+    font-size: 20px;
+
+  }
+}
+
+
+@media screen and (max-device-width: 800px) {
+
+  #map {
+
+    padding: 25%;
+
+  }
+
+  canvas {
+
+    height: 80px;
+    width: 80px;
+
+  }
+
+  img {
+
+    height: 80px;
+    width: 80px;
+
+  }
+
+  .grow{
+
+    width: 14.5%;
+    font-size: 20px;
+
+  }
+
+}
+@media screen and (max-device-width:600px) {
+
+  #map {
+
+    padding: 50%;
+
+  }
+
+  canvas {
+
+    height: 150px;
+    width: 150px;
+
+  }
+
+  img {
+
+    height: 150px;
+    width: 150px;
+
+  }
+
+  .grow {
+
+    display: block;
+    width:	auto;
+    font-size: 50px;
+
+  }
+
+}
